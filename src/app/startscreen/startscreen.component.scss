@@ -1,0 +1,87 @@
+.mainContainer{
+    width: 100vw;
+    height: 100vh;
+}
+
+.imageContainer{
+    display: flex;
+    position: relative;
+    top: 106px;
+    left: 47px;
+
+    .mainImage{
+        position: absolute;
+        width: 546px;
+        height: 650px;
+        object-fit: contain;
+    }
+
+    .background-img{
+        width: 600px;
+        height: 800px;
+        overflow: hidden;
+    }  
+}
+
+.letsTalkBtn{
+    position: absolute;
+    top: 513px;
+    left: 892px;
+    gap: 10;
+    border-radius: 10px;
+    background: #70E61C;
+    font-size: 23px;
+    color: white;
+    padding: 10px,15px;
+}
+
+.background-element{
+    position: absolute;
+    top: 378px;
+    width: 100%;
+}
+
+.headlineContainer{
+    display: flex;
+    position: absolute;
+    // align-items: center;
+    width: 718px;
+    height: 172px;
+    top: 297px;
+    left: 622px;
+    gap: 35px;
+
+    .verticalSpan{
+        width: 252px;
+        // height: 63px;
+        font-size: 54px;
+        font-weight: 400;
+        transform: rotate(-90deg);
+        color: white;
+    }
+
+    .horizontalSpan{
+        display: flex;
+        flex-direction: column;
+        width: 620px;
+        height: 172px;
+
+        .nameSpan{
+            width: 620px;
+            height: 108px;
+            font-size: 68px;
+            font-weight: 700;
+            line-height: 108px;
+            color: white;
+        }
+
+        .webSpan{
+            width: 619px;
+            height: 70px;
+            font-size: 58px;
+            color: #9747FF;
+            font-weight: 400;
+            line-height: 70px;
+        }
+    }
+}
