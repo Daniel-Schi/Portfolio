@@ -1,81 +1,90 @@
-.mainContainer{
+.mainContainer {
+    display: flex;
     width: 100vw;
-    height: 100vh;
+    height: 900px;
 }
 
-.imageContainer{
+.imageContainer {
     display: flex;
-    position: relative;
+    position: absolute;
     top: 106px;
     left: 47px;
 
-    .mainImage{
+    .mainImage {
+        display: flex;
         position: absolute;
         width: 546px;
         height: 650px;
         object-fit: contain;
     }
 
-    .background-img{
+    .background-img {
         width: 600px;
         height: 800px;
         overflow: hidden;
-    }  
+    }
 }
 
-.letsTalkBtn{
+.letsTalkBtn {
     position: absolute;
     top: 513px;
-    left: 892px;
-    gap: 10;
+    right: 400px;
+    width: 165px;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 10px;
     background: #70E61C;
     font-size: 23px;
-    color: white;
-    padding: 10px,15px;
+
+    a {
+        font-weight: 400;
+        padding: 10px, 15px;
+        color: white;
+        text-decoration: none;
+    }
 }
 
-.background-element{
+.background-element {
     position: absolute;
     top: 378px;
     width: 100%;
 }
 
-.headlineContainer{
+.headlineContainer {
     display: flex;
     position: absolute;
-    // align-items: center;
-    width: 718px;
-    height: 172px;
+    align-items: center;
     top: 297px;
-    left: 622px;
-    gap: 35px;
+    right: 100px;
 
-    .verticalSpan{
-        width: 252px;
-        // height: 63px;
-        font-size: 54px;
-        font-weight: 400;
-        transform: rotate(-90deg);
+    .verticalSpan {
         color: white;
+        rotate: 270deg;
+        font-size: 74px;
+        white-space: nowrap;
+        position: relative;
+        left: 9px;
+        top: 5px;
     }
 
-    .horizontalSpan{
+    .horizontalSpan {
         display: flex;
         flex-direction: column;
-        width: 620px;
-        height: 172px;
+       
+      
 
-        .nameSpan{
+        .nameSpan {
             width: 620px;
             height: 108px;
-            font-size: 68px;
+            font-size: 80px;
             font-weight: 700;
             line-height: 108px;
             color: white;
         }
 
-        .webSpan{
+        .webSpan {
             width: 619px;
             height: 70px;
             font-size: 58px;
