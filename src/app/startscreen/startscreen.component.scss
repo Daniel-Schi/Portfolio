@@ -8,27 +8,55 @@
     display: flex;
     position: absolute;
     top: 106px;
-    left: 47px;
 
     .mainImage {
         display: flex;
         position: absolute;
         width: 546px;
-        height: 650px;
+        height: 750px;
+        left: 80px;
         object-fit: contain;
     }
 
     .background-img {
-        width: 600px;
+        position: absolute;
+        left: -100px;
+        width: 900px;
         height: 800px;
         overflow: hidden;
+
+    }
+
+    @media(max-width: 1200px) {
+        .mainImage {
+            width: 500px;
+            height: 700px;
+        }
+
+        .background-img {
+            width: 800px;
+
+        }
+    }
+
+    @media(max-width: 1070px) {
+        .mainImage {
+            width: 400px;
+            height: 900px;
+        }
+
+        .background-img {
+            width: 700px;
+            height: 700px;
+            top: 100px;
+        }
     }
 }
 
 .letsTalkBtn {
     position: absolute;
     top: 513px;
-    right: 400px;
+    right: 380px;
     width: 165px;
     height: 58px;
     display: flex;
@@ -37,6 +65,14 @@
     border-radius: 10px;
     background: #70E61C;
     font-size: 23px;
+    transition: transform 250ms ease-in-out;
+    cursor: pointer;
+    z-index: 5;
+
+    &:hover {
+        transform: scale(1.2);
+        background-color: rgba(151, 71, 255, 1);
+    }
 
     a {
         font-weight: 400;
@@ -44,12 +80,24 @@
         color: white;
         text-decoration: none;
     }
+
+    @media (max-width: 1350px) {
+        right: 300px;
+    }
+
+    @media (max-width: 1200px) {
+        right: 250px;
+        top: 450px;
+    }
 }
 
 .background-element {
+    display: flex;
     position: absolute;
     top: 378px;
-    width: 100%;
+    width: 100vw;
+    height: 1000px;
+    overflow: hidden;
 }
 
 .headlineContainer {
@@ -57,7 +105,20 @@
     position: absolute;
     align-items: center;
     top: 297px;
-    right: 100px;
+    right: 10px;
+
+    @media (max-width: 1350px) {
+        width: 700px;
+    }
+
+    @media (max-width: 1200px) {
+        width: 600px;
+    }
+
+    @media (max-width: 1000px) {
+        width: 500px;
+    }
+
 
     .verticalSpan {
         color: white;
@@ -67,16 +128,28 @@
         position: relative;
         left: 9px;
         top: 5px;
+
+        @media (max-width: 1350px) {
+            font-size: 70px;
+        }
+
+        @media(max-width: 1200px) {
+            font-size: 54px;
+            top: 15px;
+        }
+
+        @media(max-width: 1000px) {
+            font-size: 44px;
+            top: 15px;
+        }
     }
 
     .horizontalSpan {
         display: flex;
         flex-direction: column;
-       
-      
 
         .nameSpan {
-            width: 620px;
+            width: 690px;
             height: 108px;
             font-size: 80px;
             font-weight: 700;
@@ -87,10 +160,137 @@
         .webSpan {
             width: 619px;
             height: 70px;
-            font-size: 58px;
+            font-size: 64px;
             color: #9747FF;
             font-weight: 400;
             line-height: 70px;
         }
+
+        @media (max-width: 1350px) {
+            .nameSpan {
+                font-size: 70px;
+            }
+
+            .webSpan {
+                font-size: 54px;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            .nameSpan {
+                font-size: 60px;
+                height: 80px;
+            }
+
+            .webSpan {
+                font-size: 44px;
+                height: 50px;
+            }
+        }
+
+        @media (max-width: 1000px) {
+            .nameSpan {
+                font-size: 50px;
+                height: 70px;
+            }
+
+            .webSpan {
+                font-size: 38px;
+                height: 60px;
+            }
+        }
+
     }
 }
+
+.contactStartscreen {
+    display: flex;
+    position: absolute;
+    top: 830px;
+    z-index: 44;
+    align-items: center;
+    width: 100%;
+    gap: 45px;
+
+    .contactLinks {
+        display: flex;
+        gap: 42px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 24px;
+    }
+
+    .contactLink{
+        display: flex;
+
+        &:hover{
+            scale: 1.2;
+        }
+    }
+}
+
+.contactLine {
+    border: 2px solid rgb(151, 71, 255);
+    width: 80px;
+}
+
+.scrollDown{
+    display: flex;
+    // flex-direction: row;
+    position: absolute;
+    top: 830px;
+    right: 30px;
+    color: white;
+    rotate: 90deg;
+    font-size: 24px;
+    align-items: center;
+    line-height: 27px;
+    animation: moveUpDown 2s linear infinite;
+
+    img{
+        rotate: 270deg;
+    }
+}
+
+@keyframes moveUpDown {
+
+    0%,
+    100% {
+        top: 830px;
+    }
+
+    50% {
+        top: 800px;
+        /* Ändere diese Zahl, um die vertikale Entfernung zu steuern */
+    }
+}
+
+// @keyframes jumpIcon {
+//     0% {
+//         animation-timing-function: ease-in;
+//         transform: translateX(-12px);
+//     }
+
+//     40% {
+//         animation-timing-function: ease-in;
+//         transform: translateX(-8px);
+//     }
+
+//     60% {
+//         animation-timing-function: ease-in;
+//         transform: translateX(-5px);
+//     }
+
+//     80% {
+//         animation-timing-function: ease-in;
+//         transform: translateX(-2px);
+//     }
+
+//     100% {
+//         animation-timing-function: ease-out;
+//         transform: translateX(0px);
+//     }
+// }
