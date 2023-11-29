@@ -2,102 +2,92 @@
     display: flex;
     width: 100vw;
     height: 900px;
+    position: relative;
+    background-color: #141D2F;
 }
 
-.imageContainer {
+.meImage {
     display: flex;
     position: absolute;
-    top: 106px;
+    left: 28px;
+    top: 115px;
 
-    .mainImage {
-        display: flex;
-        position: absolute;
-        width: 546px;
-        height: 750px;
-        left: 80px;
+    img {
+        width: 646px;
+        height: 705px;
         object-fit: contain;
     }
 
-    .background-img {
-        position: absolute;
-        left: -100px;
-        width: 900px;
-        height: 800px;
-        overflow: hidden;
+    @media (max-width: 1200px) {
+        top: 180px;
+        left: -10px;
 
-    }
-
-    @media(max-width: 1200px) {
-        .mainImage {
-            width: 500px;
-            height: 700px;
-        }
-
-        .background-img {
-            width: 800px;
-
+        img {
+            height: 595px;
         }
     }
 
-    @media(max-width: 1070px) {
-        .mainImage {
-            width: 400px;
-            height: 900px;
-        }
+    @media (max-width: 1000px) {
+        top: 100px;
+        left: 0;
+        right: 0;
+        justify-content: center;
+    }
 
-        .background-img {
-            width: 700px;
-            height: 700px;
-            top: 100px;
-        }
+    @media (max-width: 700px) {
+       img{
+        height: 500px;
+       }
+    }
+
+    @media(max-width:450px) {
+        top: 159px;
+       img{
+        height: 420px;
+       }
     }
 }
 
-.letsTalkBtn {
-    position: absolute;
-    top: 513px;
-    right: 380px;
-    width: 165px;
-    height: 58px;
+.background-img {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    background: #70E61C;
-    font-size: 23px;
-    transition: transform 250ms ease-in-out;
-    cursor: pointer;
-    z-index: 5;
+    position: absolute;
+    top: 136px;
+    left: -90px;
+    overflow: hidden;
 
-    &:hover {
-        transform: scale(1.2);
-        background-color: rgba(151, 71, 255, 1);
-    }
-
-    a {
-        font-weight: 400;
-        padding: 10px, 15px;
-        color: white;
-        text-decoration: none;
-    }
-
-    @media (max-width: 1350px) {
-        right: 300px;
-    }
-
-    @media (max-width: 1200px) {
-        right: 250px;
-        top: 450px;
+    @media (max-width: 1000px) {
+        top: 130px;
+        left: 0;
+        right: 0;
+        justify-content: center;
     }
 }
 
 .background-element {
     display: flex;
     position: absolute;
-    top: 378px;
+    top: 375px;
     width: 100vw;
     height: 1000px;
     overflow: hidden;
+
+    img {
+        width: 100%;
+    }
+
+    @media (max-width: 1350px) {
+        img {
+            width: auto;
+        }
+    }
+
+    @media(max-width: 1000px) {
+        top: 266px;
+    }
+
+    @media(max-width: 700px) {
+        top: 180px;
+    }
 }
 
 .headlineContainer {
@@ -105,112 +95,183 @@
     position: absolute;
     align-items: center;
     top: 297px;
-    right: 10px;
-
-    @media (max-width: 1350px) {
-        width: 700px;
-    }
-
-    @media (max-width: 1200px) {
-        width: 600px;
-    }
+    right: 100px;
+    text-align: center;
 
     @media (max-width: 1000px) {
-        width: 500px;
+        top: 690px;
+        justify-content: center;
+        align-items: center;
+        right: 250px;
     }
 
+    @media (max-width: 700px) {
+        right: 180px;
+        top: 605px;
+    }
+
+    @media (max-width: 525px) {
+        right: 100px;
+    }
+
+    @media (max-width: 450px) {
+        right: 0px;
+        left: 0;
+    }
 
     .verticalSpan {
         color: white;
         rotate: 270deg;
-        font-size: 74px;
+        font-size: 70px;
         white-space: nowrap;
         position: relative;
         left: 9px;
-        top: 5px;
 
         @media (max-width: 1350px) {
-            font-size: 70px;
+            font-size: 50px;
+
         }
 
         @media(max-width: 1200px) {
-            font-size: 54px;
-            top: 15px;
+            font-size: 40px;
+            top: -3px;
         }
 
-        @media(max-width: 1000px) {
-            font-size: 44px;
-            top: 15px;
+        @media(max-width: 700px) {
+            font-size: 34px;
+            top: -7px;
+        }
+
+        @media (max-width: 450px) {
+            font-size: 25px;
+            top: -13px;
         }
     }
 
-    .horizontalSpan {
-        display: flex;
-        flex-direction: column;
+    .name {
+        position: relative;
+        white-space: nowrap;
+        font-size: 80px;
+        font-weight: 700;
+        color: white;
+    }
 
-        .nameSpan {
-            width: 690px;
-            height: 108px;
-            font-size: 80px;
-            font-weight: 700;
-            line-height: 108px;
-            color: white;
+    .job {
+        position: relative;
+        justify-content: flex-start;
+        display: flex;
+        font-size: 68px;
+        color: #9747FF;
+        font-weight: 400;
+        top: -5px;
+    }
+
+    @media (max-width: 1350px) {
+        .name {
+            font-size: 66px;
         }
 
-        .webSpan {
-            width: 619px;
-            height: 70px;
-            font-size: 64px;
-            color: #9747FF;
+        .job {
+            font-size: 44px;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .name {
+            font-size: 50px;
+        }
+
+        .job {
+            font-size: 40px;
+        }
+    }
+
+    @media (max-width: 700px) {
+        .name {
+            font-size: 40px;
+        }
+
+        .job { 
+            font-size: 34px;
+            height: 50px;
+        }
+    }
+
+    @media (max-width: 450px) {
+        .name {
+            font-size: 32px;
+        }
+
+        .job {
+            font-size: 25px;
+        }
+    }
+
+    .letsTalkBtn {
+        display: flex;
+        position: absolute;
+        top: 220px;
+        right: 300px;
+        min-width: 165px;
+        min-height: 58px;
+        border-radius: 10px;
+        background: #70E61C;
+        transition: transform 250ms ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.2);
+            background-color: rgba(151, 71, 255, 1);
+        }
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            font-size: 23px;
             font-weight: 400;
-            line-height: 70px;
+            color: white;
+            text-decoration: none;
         }
 
         @media (max-width: 1350px) {
-            .nameSpan {
-                font-size: 70px;
-            }
-
-            .webSpan {
-                font-size: 54px;
-            }
+            right: 220px;
+            top: 180px;
         }
 
         @media (max-width: 1200px) {
-            .nameSpan {
-                font-size: 60px;
-                height: 80px;
-            }
-
-            .webSpan {
-                font-size: 44px;
-                height: 50px;
-            }
+            right: 150px;
+            top: 150px;
         }
 
         @media (max-width: 1000px) {
-            .nameSpan {
-                font-size: 50px;
-                height: 70px;
-            }
-
-            .webSpan {
-                font-size: 38px;
-                height: 60px;
-            }
+            top: 120px;
+            display: flex;
+            justify-content: center;
+            
         }
 
+        @media(max-width: 700px) {
+            top: 115px;
+            right: 100px;
+        }
+
+        @media(max-width: 450px) {
+            top: 100px;
+        }
     }
 }
 
 .contactStartscreen {
     display: flex;
     position: absolute;
-    top: 830px;
+    top: 850px;
     z-index: 44;
     align-items: center;
     width: 100%;
     gap: 45px;
+    bottom: 150px;
 
     .contactLinks {
         display: flex;
@@ -223,25 +284,53 @@
         font-size: 24px;
     }
 
-    .contactLink{
+    .contactLink {
         display: flex;
 
-        &:hover{
+        &:hover {
             scale: 1.2;
         }
+    }
+
+    @media (max-width: 1000px) {
+        top: 950px;
+    }
+
+    @media (max-width: 700px) {
+        top: 850px;
+        width: 100vw;
+        left: -140px;
+        display: flex;
+        justify-content: center;
+    }
+    @media (max-width: 450px) {
+        display: flex;
+        justify-content: center;
+        left: -90px;
     }
 }
 
 .contactLine {
     border: 2px solid rgb(151, 71, 255);
     width: 80px;
+
+    @media (max-width: 700px) {
+        width: 205px;
+    }
+    @media (max-width: 450px) {
+        width: 130px;
+    }
 }
 
-.scrollDown{
+.emailAdress {
+    @media (max-width: 700px) {
+        display: none;
+    }
+}
+
+.scrollDown {
     display: flex;
-    // flex-direction: row;
     position: absolute;
-    top: 830px;
     right: 30px;
     color: white;
     rotate: 90deg;
@@ -250,8 +339,12 @@
     line-height: 27px;
     animation: moveUpDown 2s linear infinite;
 
-    img{
+    img {
         rotate: 270deg;
+    }
+
+    @media (max-width: 1000px) {
+        display: none;
     }
 }
 
@@ -259,38 +352,10 @@
 
     0%,
     100% {
-        top: 830px;
+        top: 780px;
     }
 
     50% {
-        top: 800px;
-        /* Ändere diese Zahl, um die vertikale Entfernung zu steuern */
+        top: 750px;
     }
 }
-
-// @keyframes jumpIcon {
-//     0% {
-//         animation-timing-function: ease-in;
-//         transform: translateX(-12px);
-//     }
-
-//     40% {
-//         animation-timing-function: ease-in;
-//         transform: translateX(-8px);
-//     }
-
-//     60% {
-//         animation-timing-function: ease-in;
-//         transform: translateX(-5px);
-//     }
-
-//     80% {
-//         animation-timing-function: ease-in;
-//         transform: translateX(-2px);
-//     }
-
-//     100% {
-//         animation-timing-function: ease-out;
-//         transform: translateX(0px);
-//     }
-// }
