@@ -125,10 +125,9 @@
 
     @media(max-width: 850px) {
         display: flex;
+        z-index: 6;
     }
 }
-
-
 
 .ham {
     cursor: pointer;
@@ -182,8 +181,11 @@
     stroke-dashoffset: -86px;
 }
 
+.navbarBurgerLink{
+    display: none;
+}
 
-.navbarBurgerLink {
+.navbarBurgerLink.show {
     display: flex;
     position: fixed;
     flex-direction: column;
@@ -197,6 +199,7 @@
     width: 100vw;
     height: 100vh;
     opacity: 1;
+    z-index: 5;
 
     a {
         color: white;

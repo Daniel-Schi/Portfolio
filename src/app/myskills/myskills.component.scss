@@ -1,4 +1,58 @@
 .myskillsContainer{
+    position: relative;
+    width: 100%;
+}
+
+.skillIcons{
     position: absolute;
-    top: 2000px;
+    top: 100px;
+    left: 100px;
+    width: 721px;
+    height: 414px;
+    gap: 54px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.textContainer {
+    position: absolute;
+    right: 100px;
+    top: 100px;
+    color: white;
+    width: 571px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    h2{
+        display: flex;
+        justify-content: flex-end;
+        font-size: 90px;
+        font-weight: 700;
+    }
+
+    span{
+        font-size: 20px;
+        font-weight: 400;
+        display: flex;
+        // justify-content: flex-end;
+        // align-items: flex-end;
+       
+    }
+
+    .rightLine{
+        position: absolute;
+        right: -120px;
+        top: 130px;
+        width: 58px;
+        border: 2px solid #9747FF;
+    }
 }

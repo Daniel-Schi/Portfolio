@@ -6,5 +6,30 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  screenWidth!: number;
+  menuIsOpen: boolean = false;
+  active = false;
+
+  // constructor(public translate: TranslateService){}
+
+  
+  toggleNavLink() {
+    this.menuIsOpen = !this.menuIsOpen;
+  
+    const navbarBurgerLink = document.querySelector('.navbarBurgerLink') as HTMLElement;
+  
+    if (navbarBurgerLink) {
+      navbarBurgerLink.classList.toggle('show');
+    }
+  
+    if (!this.menuIsOpen) {
+      this.resetBurgerIcon(); // Zurücksetzen des Burger-Icons, wenn das Menü geschlossen wird
+    }
+  }
+
+  resetBurgerIcon() {
+    const hamIcon = document.querySelector('.ham') as HTMLElement;
+    if (hamIcon) {
+      hamIcon.classList.remove('active');
+    }
+  }
 }

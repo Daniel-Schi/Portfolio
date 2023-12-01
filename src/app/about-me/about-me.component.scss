@@ -1,10 +1,15 @@
 .aboutMeContainer {
     display: flex;
-    height: 900px;
-    overflow: hidden;
     position: relative;
-    // width: 100vw;
-    background-color: #141D2F;
+    height: 900px;
+
+    @media (max-width: 1000px) {
+        padding-top: 100px;
+    }
+
+    @media (max-width: 700px) {
+        padding-top: 0;
+    }
 
 
     .aboutMeDescription {
@@ -17,26 +22,48 @@
         padding-top: 100px;
         padding-left: 100px;
 
+        @media (max-width: 1300px) {
+            padding-right: 0;
+        }
 
-        // @media (max-width: 1050px) {
-        //     width: 100vw;
-        //     align-items: center;
-        //   }
+        @media (max-width: 900px) {
+            width: 100vw;
+            text-align: center;
+            padding-right: 100px;
+        }
+
+        @media (max-width: 491px) {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        @media (max-width: 400px) {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
 
         h2 {
             margin: 0;
             font-size: 90px;
             font-weight: 700;
 
-            @media (max-width: 1200px) {
+            @media (max-width: 1050px) {
                 font-size: 70px;
+            }
+
+            @media (max-width: 550px) {
+                font-size: 60px;
             }
         }
 
         p {
             margin-top: 35px;
             margin-bottom: 35px;
-            font-size: 16px;
+            font-size: 18px;
+
+            @media (max-width: 900px) {
+               text-align: start;
+              }
         }
 
         .aboutMeContent {
@@ -44,9 +71,9 @@
             flex-direction: column;
             gap: 35px;
 
-            @media (max-width: 1050px) {
-                padding-right: 100px;
-            }
+            // @media (max-width: 1050px) {
+            //     padding-right: 100px;
+            // }
         }
 
         .aboutMeContentInfo {
@@ -54,23 +81,31 @@
             flex-direction: row;
             justify-content: space-between;
             gap: 30px;
-            font-size: 16px;
+            font-size: 22px;
 
             img {
                 width: 50px;
                 height: 50px;
                 object-fit: contain;
             }
+
+            @media (max-width: 900px) {
+                text-align: start;
+               }
         }
-
-
     }
 
     .background-element {
-        display: flex;
         position: absolute;
+        overflow: hidden;
+        display: flex;
         right: 0px;
-        top: -10px;
+        top: -150px;
+        opacity: 0.8;
+
+        @media (max-width: 1000px) {
+            padding-top: 100px;
+        }
     }
 
     .aboutMeImage {
@@ -81,6 +116,10 @@
         align-items: center;
         flex-direction: row-reverse;
 
+        @media (max-width: 1000px) {
+            padding-top: 100px;
+        }
+
         img {
             width: 400px;
             height: 400px;
@@ -88,12 +127,17 @@
             border-radius: 100%;
             border: 4px solid #70E61C;
 
-            @media (max-width: 1200px) {
+            @media (max-width: 1300px) {
                 width: 300px;
                 height: 300px;
             }
 
             @media (max-width: 1050px) {
+                width: 250px;
+                height: 250px;
+            }
+
+            @media (max-width: 900px) {
                 display: none;
             }
         }
@@ -102,7 +146,15 @@
             width: 267px;
             border: 2px solid #70E61C;
 
+            @media (max-width: 1300px) {
+                width: 150px;
+            }
+
             @media (max-width: 1050px) {
+                width: 50px;
+            }
+
+            @media (max-width: 900px) {
                 display: none;
             }
         }
