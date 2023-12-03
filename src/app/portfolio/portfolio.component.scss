@@ -1,0 +1,65 @@
+.portfolioContainer{
+    position: relative;
+    width: 100vw;
+}
+
+.portfolioHeadline{
+    position: absolute;
+    top: -300px;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 50px;
+
+    h2{
+        color: white;
+        font-size: 90px;
+       font-weight: 700;
+       align-items: center;
+    }
+
+    .headlineLineLeft{
+        width: 109px;
+        border: 2px solid #9747FF;
+    }
+    .headlineLineRight{
+        width: 484px;
+        border: 2px solid #9747FF;
+
+    }
+}
+
+.sampleWork{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 733px;
+    right: 353px;
+    color: white;
+    top: -80px;
+}
+
+.projectContainer{
+    width: 1168px;
+    height: 340px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 100px;
+
+    .imgContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+        }
+    }
+
+    .projectName{
+        color: white;
+    }
+}

@@ -1,0 +1,30 @@
+<div class="portfolioContainer">
+    <div class="portfolioHeadline">
+        <div class="headlineLineLeft"></div>
+        <h2>Portfolio</h2>
+        <div class="headlineLineRight"></div>
+    </div>
+    <div class="sampleWork">
+        <span>This page is a sample work - please feel free to try them out.</span>
+    </div>
+    <div class="projectContainer">
+        <div class="backgroundElementLeft"></div>
+        <div class="backgroundElementRight"></div>
+        <div *ngFor="let project of projects; let i = index">
+            <div [ngStyle]="{'flex-direction': i % 2 !== 0 ? 'row-reverse' : 'row'}" [attr.data-aos]="i % 2 !== 0 ? 'fade-left' : 'fade-right'" class="contentContainer">
+                <div class="imgContainer"><img src="assets/img/picture/{{ project.image }}"></div>
+                <span class="projectName">{{ project.name }}</span>
+                <!-- <div class="projectLanguages"></div> -->
+                <!-- <span class="projectDescription"></span> -->
+            </div>
+        </div>
+    </div>
+    <!-- <div class="projectContainer">
+        <div class="imgContainer"></div>
+        <div class="contentContainer"></div>
+    </div>
+    <div class="projectContainer">
+        <div class="imgContainer"></div>
+        <div class="contentContainer"></div>
+    </div> -->
+</div>
