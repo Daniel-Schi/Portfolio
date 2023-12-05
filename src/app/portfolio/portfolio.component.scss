@@ -1,9 +1,9 @@
-.portfolioContainer{
+.portfolioContainer {
     position: relative;
     width: 100vw;
 }
 
-.portfolioHeadline{
+.portfolioHeadline {
     position: absolute;
     top: -300px;
     right: 0;
@@ -12,25 +12,26 @@
     align-items: center;
     gap: 50px;
 
-    h2{
+    h2 {
         color: white;
         font-size: 90px;
-       font-weight: 700;
-       align-items: center;
+        font-weight: 700;
+        align-items: center;
     }
 
-    .headlineLineLeft{
+    .headlineLineLeft {
         width: 109px;
         border: 2px solid #9747FF;
     }
-    .headlineLineRight{
+
+    .headlineLineRight {
         width: 484px;
         border: 2px solid #9747FF;
 
     }
 }
 
-.sampleWork{
+.sampleWork {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -40,26 +41,80 @@
     top: -80px;
 }
 
-.projectContainer{
-    width: 1168px;
-    height: 340px;
+.backgroundElementLeft {
     position: absolute;
+    top: 150px;
+    left: 0;
+    overflow: hidden;
+    display: flex;
+    opacity: 0.5;
+}
+
+.backgroundElementRight {
+    position: absolute;
+    bottom: 0px;
+    overflow: hidden;
+    display: flex;
+    z-index: -1;
+    right: -90px;
+    height: 951px;
+    width: 429px;
+    opacity: 0.8;
+
+
+    img {
+        position: absolute;
+        rotate: 180deg;
+    }
+}
+
+.projectContainer {
+    position: relative;
     display: flex;
     flex-direction: column;
-    left: 100px;
+    gap: 100px;
+    // overflow: hidden;
 
-    .imgContainer{
+    .imgContainer {
         display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
+        gap: 35px;
+        margin: 0 100px;
+    }
+
+    .images {
+        height: 450px;
+        width: 550px;
+        display: flex;
+        align-items: center;
+        justify-content: center !important;
+        z-index: 1;
+
         img{
-            width: 300px;
-            height: 200px;
+            width: 400px;
+            height: 370px;
             object-fit: cover;
         }
     }
 
-    .projectName{
-        color: white;
+    .projectContent {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        width: 500px;
+
+        .projectName {
+            color: white;
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        .projectLanguages{
+            font-size: 23px;
+            color: #70E61C;
+        }
     }
+
+
 }
