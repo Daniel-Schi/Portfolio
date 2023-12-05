@@ -13,13 +13,17 @@
         <div *ngFor="let project of projects; let i = index">
             <div [ngStyle]="{'flex-direction': i % 2 !== 0 ? 'row-reverse' : 'row'}"
                 [attr.data-aos]="i % 2 !== 0 ? 'fade-left' : 'fade-right'" class="imgContainer">
-                <div class="images"><img
-                        src="assets/img/picture/{{ project.image }}"></div>
+                <div class="images"><img src="assets/img/picture/{{ project.image }}"></div>
                 <div class="projectContent" [ngStyle]="{'text-align': i % 2 !== 0 ? 'end' : 'start'}">
                     <span class="projectName">{{ project.name }}</span>
                     <span class="projectLanguages">{{ project.language }}</span>
-                    <!-- <span class="projectDescription">{{ project.translations}}</span> -->
+                    <span class="projectDescription">{{ getProjectDescription(project) }}</span>
+                    <div class="btnContainer" [ngStyle]="{'justify-content': i % 2 !== 0 ? 'flex-end' : 'flex-start'}">
+                        <a class="live" target="_blank" href="#">Live test</a>
+                        <a class="github" target="_blank" href="{{ project.github }}">Github</a>
+                    </div>
                 </div>
+
             </div>
         </div>
     </div>

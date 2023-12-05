@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
@@ -9,7 +10,7 @@ export class HeaderComponent {
   menuIsOpen: boolean = false;
   active = false;
 
-  // constructor(public translate: TranslateService){}
+  constructor(public translate: TranslateService){}
 
   
   toggleNavLink() {

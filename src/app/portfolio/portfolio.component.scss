@@ -91,7 +91,7 @@
         justify-content: center !important;
         z-index: 1;
 
-        img{
+        img {
             width: 400px;
             height: 370px;
             object-fit: cover;
@@ -105,14 +105,64 @@
         width: 500px;
 
         .projectName {
-            color: white;
+            color: #9747FF;
             font-size: 32px;
             font-weight: 700;
         }
 
-        .projectLanguages{
+        .projectLanguages {
             font-size: 23px;
             color: #70E61C;
+        }
+
+        .projectDescription {
+            color: white;
+        }
+
+        .btnContainer {
+            display: flex;
+            gap: 86px;
+            font-size: 23px;
+            font-weight: 400;
+           
+
+            .live {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 152px;
+                height: 58px;
+                background-color: #9747FF;
+                color: white;
+                border-radius: 10px;
+                cursor: pointer;
+                text-decoration: none;
+
+                &:hover{
+                    background-color: #70E61C;
+                }
+
+            }
+
+            .github {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 152px;
+                height: 58px;
+                border-radius: 10px;
+                border: 1px solid #70E61C;
+                color: white;
+                padding: 15px, 30px;
+                gap: 10px;
+                text-decoration: none;
+
+                &:hover{
+                    background-color: #70E61C;
+                }
+            }
+
+
         }
     }
 
