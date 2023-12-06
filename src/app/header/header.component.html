@@ -6,10 +6,10 @@
         <p class="length-color">l</p>
     </div>
     <div class="navbarLink">
-        <a href="#aboutMe">About me</a>
-        <a href="#skills">Skills</a>
+        <a href="#aboutMe" translate>About me</a>
+        <a href="#skills" translate>Skills</a>
         <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
+        <a href="#contact" translate>Contact</a>
         <div>
             <a (click)="translate.use('de');">DE</a>
             <b>|</b>
@@ -28,10 +28,10 @@
         </svg>
     </div>
     <div class="navbarBurgerLink" [ngClass]="{'open' : menuIsOpen}">
-        <a href="#aboutMe" (click)="toggleNavLink(); resetBurgerIcon()">About me</a>
-        <a href="#skills" (click)="toggleNavLink(); resetBurgerIcon()">Skills</a>
+        <a href="#aboutMe" (click)="toggleNavLink(); resetBurgerIcon()" translate>About me</a>
+        <a href="#skills" (click)="toggleNavLink(); resetBurgerIcon()" translate>Skills</a>
         <a href="#portfolio" (click)="toggleNavLink(); resetBurgerIcon()">Portfolio</a>
-        <a href="#contact" (click)="toggleNavLink(); resetBurgerIcon()">Contact</a>
+        <a href="#contact" (click)="toggleNavLink(); resetBurgerIcon()" translate>Contact</a>
         <div>
             <a (click)="translate.use('de');">DE</a>
             <b>|</b>

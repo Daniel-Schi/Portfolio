@@ -1,4 +1,14 @@
 {
     "About me": "About me",
-    "Join": "A task manager inspired by the KAnban system. Create and organize tasks using drag and drop functions, assing users and categories."
+    "Skills": "Skills", 
+    "Contact": "Contact",
+    "talk": "Let's talk!",
+    "SkillsHeadline": "My Skills",
+    "skillsText": "I have gained experience in building projects with various front end technologies and concepts.",
+    "touch": "Get in touch",
+    "intro": "Hi, I am Daniel an ambitious frontend developer based in Fulda, Hessen. On my journey into development I acquired knowledge of HTML, CSS and JavaScript.",
+    "aboutMePartOne": "With my new experience, I created various websites and business applications as well as a jump and run game using object-oriented programming.",
+    "aboutMePartTwo": "Due to my everyday professional life as a physiotherapist, communication is very important in order to differentiate problems.There are also team discussions to find common solutions. These skills will help me in IT to achieve the best possible result as a team.",
+    "Join": "A task manager inspired by the KAnban system. Create and organize tasks using drag and drop functions, assing users and categories.",
+    "sampleWork": "This page is a sample work - please feel free to try them out."
 }

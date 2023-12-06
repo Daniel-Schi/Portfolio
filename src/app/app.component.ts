@@ -7,9 +7,11 @@ import * as AOS from 'aos';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent implements OnInit{
   title = 'portfolio';
 
+  
   constructor(public translate: TranslateService) {
 
   }

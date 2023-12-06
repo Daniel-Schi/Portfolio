@@ -1,4 +1,14 @@
 {
-    "About me" : "Über mich",
-    "Join": "Ein Aufgaben-Manager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu."
+    "About me": "Über mich",
+    "Skills": "Kenntnisse", 
+    "Contact": "Kontakt",
+    "talk": "Schreib mir",
+    "SkillsHeadline": "Kenntnisse",
+    "skillsText": "Ich habe Erfahrung in der Erstellung von Projekten mit verschiedenen Frontend-Technologien und Konzepten gesammelt.",
+    "touch": "Kontaktiere mich",
+    "intro": "Hallo, ich bin Daniel, ein ambitionierter Frontend-Entwickler mit Sitz in Fulda, Hessen. Auf meinem Weg in die Entwicklung habe ich mir Kenntnisse in HTML, CSS und JavaScript angeeignet.",
+    "aboutMePartOne": "Mit meiner neuen Erfahrung habe ich verschiedene Websites und Geschäftsanwendungen sowie ein Jump-and-Run-Spiel mithilfe objektorientierter Programmierung erstellt.",
+    "aboutMePartTwo": "Aufgrund meines beruflichen Alltags als Physiotherapeut ist die Kommunikation sehr wichtig, um Probleme zu differenzieren. Außerdem finden Teamgespräche statt, um gemeinsame Lösungen zu finden. Diese Fähigkeiten werden mir in der IT dabei helfen, das bestmögliche Ergebnis zu erzielen Team.",
+    "Join": "Ein Aufgaben-Manager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+    "sampleWork": "Diese Seite ist ein Beispiel meiner Arbeit - bitte zögern Sie nicht, sie auszuprobieren."
 }

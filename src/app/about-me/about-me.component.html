@@ -1,16 +1,15 @@
 <div class="aboutMeContainer">
     <div class="aboutMeDescription">
-        <h2>About me</h2>
-        <p>Hi, I am Daniel an ambitious frontend developer based in Fulda, Hessen. On my journey into development I acquired knowledge of HTML, CSS and JavaScript. </p>
+        <h2 translate>About me</h2>
+        <p>{{ 'intro' | translate }} </p>
         <div class="aboutMeContent">
             <div data-aos="fade-up-right" data-aos-offset="400" data-aos-easing="ease-in-sine" class="aboutMeContentInfo">
                 <div> <img src="/assets/img/icons/lightbulb.png" alt=""></div>
-                <span>With my new experience, I created various websites and business applications as well as a jump and run game using object-oriented programming.</span>
+                <span>{{ 'aboutMePartOne' | translate }}</span>
             </div>
             <div data-aos="fade-up-left" data-aos-offset="400" data-aos-easing="ease-in-sine" class="aboutMeContentInfo">
                 <div> <img src="/assets/img/icons/puzzle.png" alt=""></div>
-                <span>Due to my everyday professional life as a physiotherapist, communication is very important in order to differentiate problems.
-                     There are also team discussions to find common solutions. These skills will help me in IT to achieve the best possible result as a team.</span>
+                <span> {{ 'aboutMePartTwo' | translate }}</span>
             </div>
         </div>
     </div>
