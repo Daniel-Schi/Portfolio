@@ -1,0 +1,183 @@
+.contactContainer {
+    width: 100vw;
+    position: relative;
+}
+
+.backgroundimg {
+    left: -321px;
+    top: 300px;
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+    rotate: -120deg;
+    opacity: 1;
+}
+
+.contactHeadline {
+    display: flex;
+    align-items: center;
+    top: 100px;
+    position: relative;
+
+    .contactLineLeft {
+        width: 50px;
+        left: 0;
+        border: 2px solid #9747FF;
+    }
+
+    .headline {
+        display: flex;
+        position: absolute;
+        color: white;
+        left: 100px;
+        font-size: 90px;
+        font-weight: 700;
+    }
+}
+
+.contactContentContainer {
+    display: flex;
+    position: relative;
+    width: 87%;
+    left: 100px;
+    top: 200px;
+    justify-content: space-between;
+
+    .contactContent {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        width: 35%;
+
+        h3 {
+            font-size: 38px;
+        }
+
+        span {
+            font-size: 23px;
+            font-weight: 400;
+            padding-bottom: 20px;
+        }
+
+        .contactMe {
+            font-weight: 700;
+        }
+    }
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 617px;
+    height: 504px;
+    gap: 32px;
+
+    .contactForm {
+        width: 100%;
+
+        input {
+            width: 92%;
+            padding: 15px 25px;
+            background-color: transparent;
+            border: 1px solid #9747FF;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+
+            &::placeholder {
+                color: white;
+            }
+
+            &:hover {
+                border: 1px solid #70E61C;
+            }
+        }
+
+        textarea {
+            width: 92%;
+            height: 202px;
+            padding: 15px 25px;
+            background-color: transparent;
+            border: 1px solid #9747FF;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+
+            &::placeholder {
+                color: white;
+            }
+
+            &:hover {
+                border: 1px solid #70E61C;
+            }
+
+            &::-webkit-scrollbar {
+                width: 7px;
+                border-radius: 10px;
+            }
+
+            &::-webkit-scrollbar-track {
+                background: #70E61C;
+                border-radius: 10px;
+
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: rgb(29, 39, 60);
+                border-radius: 10px;
+
+            }
+        }
+
+        .errorImage {
+            position: absolute;
+            right: 30px;
+            top: 10px;
+            z-index: 1;
+        }
+
+        .confirmImage {
+            position: absolute;
+            right: 30px;
+            top: 10px;
+            z-index: 1;
+        }
+
+        .requiredInfo {
+            display: flex;
+            padding-top: 10px;
+            color: red;
+        }
+    }
+
+    .sendMessage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+
+        button {
+            display: flex;
+            width: 253px;
+            height: 58px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            background-color: #B6B6B6;
+            color: white;
+        }
+    }
+}
+
+.goUpBtn {
+    display: flex;
+    position: absolute;
+    right: 110px;
+    top: 1000px;
+
+    &:hover {
+        cursor: pointer;
+        content: url(/assets/img/icons/goUpBtnGreen.png);
+    }
+}
