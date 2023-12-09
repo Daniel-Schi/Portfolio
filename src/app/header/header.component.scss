@@ -7,9 +7,12 @@
     align-items: center;
     width: 100vw;
     height: 100px;
-    padding-left: 100px;
-    padding-right: 100px;
-    box-sizing: border-box;
+    padding: 37px 100px;
+    box-sizing: border-box;    
+
+    @media (max-width: 450px) {       
+           padding: 37px 25px;
+    }
 }
 
 .nameContainer {
@@ -238,13 +241,5 @@
         font-size: 33px;
         padding-left: 5px;
         padding-right: 5px;
-    }
-}
-
-@media (max-width: 450px) {
-    .headerContainer {
-        width: 100%;
-        padding-left: 50px;
-        padding-right: 20px;
     }
 }

@@ -1,44 +1,124 @@
 .portfolioContainer {
     position: relative;
     width: 100vw;
+overflow-x: hidden;
+
+    @media(max-width: 940px) {
+        top: 100px;
+    }
+
+    @media(max-width: 550px) {
+        top: 200px;
+    }
+
+    @media(max-width: 493px) {
+        top: 100px;
+    }
+}
+
+.headlineBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -100px;
 }
 
 .portfolioHeadline {
-    position: absolute;
-    top: -300px;
-    right: 0;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
-    gap: 50px;
+    gap: 30px;
 
     h2 {
         color: white;
         font-size: 90px;
         font-weight: 700;
-        align-items: center;
+        margin-right: 120px;
+
+        @media(max-width: 700px) {
+            font-size: 70px;
+        }
+
+        @media(max-width: 550px) {
+            font-size: 54px;
+        }
+
+        @media(max-width: 450px) {
+            margin-right: 10px;
+        }
     }
 
     .headlineLineLeft {
+        display: flex;
         width: 109px;
         border: 2px solid #9747FF;
+
+        @media(max-width: 550px) {
+            width: 60px;
+        }
+
+        @media(max-width: 450px) {
+            width: 30px;
+        }
     }
 
     .headlineLineRight {
-        width: 484px;
+        position: absolute;
+        right: 0;
+        width: calc(50% - 230px);
         border: 2px solid #9747FF;
 
+
+        @media(max-width: 550px) {
+            width: calc(50% - 140px);
+        }
+
+        @media(max-width: 450px) {
+            width: 75px;
+        }
+    }
+
+    @media(max-width: 450px) {
+        padding-right: 60px;
+        left: 81px;
+        gap: 10px;
     }
 }
 
 .sampleWork {
-    position: absolute;
     display: flex;
     justify-content: center;
     width: 733px;
     right: 353px;
     color: white;
-    top: -80px;
+
+    @media(max-width: 1175px) {
+        left: 100px;
+    }
+
+    @media(max-width: 900px) {
+        width: 100%;
+        left: 60px;
+    }
+
+    @media(max-width: 760px) {
+        left: 0;
+        font-size: 18px;
+    }
+
+    @media(max-width: 700px) {
+        font-size: 16px;
+    }
+
+    @media(max-width: 550px) {
+        width: 340px;
+        left: 70px;
+        top: -150px;
+    }
+
+    @media(max-width: 450px) {
+        left: 75px;
+    }
 }
 
 .backgroundElementLeft {
@@ -48,6 +128,13 @@
     overflow: hidden;
     display: flex;
     opacity: 0.5;
+
+    img{
+        @media(max-width: 450px) {
+            width: 85%;
+            left: 30px;
+        }
+    }
 }
 
 .backgroundElementRight {
@@ -55,16 +142,27 @@
     bottom: 0px;
     overflow: hidden;
     display: flex;
-    z-index: -1;
     right: -90px;
     height: 951px;
     width: 429px;
     opacity: 0.8;
 
+    @media(max-width: 450px) {
+        right: -60px;
+        width: 80%;
+    }
+
 
     img {
         position: absolute;
         rotate: 180deg;
+
+        @media(max-width: 450px) {
+            width: 193px;
+            height: 429px;
+            right: 60px;
+            overflow: hidden;
+        }
     }
 }
 
@@ -73,7 +171,12 @@
     display: flex;
     flex-direction: column;
     gap: 100px;
-    // overflow: hidden;
+    overflow: hidden;
+
+    @media(max-width: 550px) {
+        top: -100px;
+        gap: 50px;
+    }
 
     .imgContainer {
         display: flex;
@@ -81,6 +184,12 @@
         justify-content: center;
         gap: 35px;
         margin: 0 100px;
+
+        @media(max-width: 900px) {
+            flex-direction: column !important;
+            gap: 30px;
+        }
+
     }
 
     .images {
@@ -90,11 +199,22 @@
         align-items: center;
         justify-content: center !important;
         z-index: 1;
+        overflow: hidden;
 
         img {
             width: 400px;
             height: 370px;
             object-fit: cover;
+
+            @media(max-width: 1100px) {
+                width: 300px;
+                height: 270px;
+            }
+
+            @media(max-width: 450px) {
+                width: 250px;
+                height: 220px;
+            }
         }
     }
 
@@ -103,20 +223,49 @@
         flex-direction: column;
         gap: 35px;
         width: 500px;
+        z-index: 1;
+
+        @media(max-width: 700px) {
+            gap: 25px;
+        }
+
+        @media(max-width: 550px) {
+            margin-top: -60px;
+            width: 340px;
+        }
+
+        @media(max-width: 450px) {
+            width: 320px;
+            justify-content: center;
+        }
 
         .projectName {
             color: #9747FF;
             font-size: 32px;
             font-weight: 700;
+
+            @media(max-width: 900px) {
+                display: flex;
+                justify-content: center !important;
+            }
         }
 
         .projectLanguages {
             font-size: 23px;
             color: #70E61C;
+
+            @media(max-width: 900px) {
+                display: flex;
+                justify-content: center !important;
+            }
         }
 
         .projectDescription {
             color: white;
+
+            @media(max-width: 450px) {
+                text-align: center !important;
+            }
         }
 
         .btnContainer {
@@ -124,7 +273,15 @@
             gap: 86px;
             font-size: 23px;
             font-weight: 400;
-           
+
+            @media(max-width: 900px) {
+                display: flex;
+                justify-content: center !important;
+            }
+
+            @media(max-width: 450px) {
+                gap: 40px;
+            }
 
             .live {
                 display: flex;
@@ -138,10 +295,9 @@
                 cursor: pointer;
                 text-decoration: none;
 
-                &:hover{
+                &:hover {
                     background-color: #70E61C;
                 }
-
             }
 
             .github {
@@ -157,12 +313,10 @@
                 gap: 10px;
                 text-decoration: none;
 
-                &:hover{
+                &:hover {
                     background-color: #70E61C;
                 }
             }
-
-
         }
     }
 
