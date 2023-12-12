@@ -10,5 +10,16 @@
     "aboutMePartOne": "Mit meiner neuen Erfahrung habe ich verschiedene Websites und Geschäftsanwendungen sowie ein Jump-and-Run-Spiel mithilfe objektorientierter Programmierung erstellt.",
     "aboutMePartTwo": "Aufgrund meines beruflichen Alltags als Physiotherapeut ist die Kommunikation sehr wichtig, um Probleme zu differenzieren. Außerdem finden Teamgespräche statt, um gemeinsame Lösungen zu finden. Diese Fähigkeiten werden mir in der IT dabei helfen, das bestmögliche Ergebnis zu erzielen Team.",
     "Join": "Ein Aufgaben-Manager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
-    "sampleWork": "Diese Seite ist ein Beispiel meiner Arbeit - bitte zögern Sie nicht, sie auszuprobieren."
+    "sampleWork": "Diese Seite ist ein Beispiel meiner Arbeit - bitte zögern Sie nicht, sie auszuprobieren.",
+    "contactSecendHeadline":"Sie haben ein Problem zu lösen?",
+    "contactContent": "Kontaktieren Sie mich über dieses Formular. Ich freue mich darauf, von Ihnen zu hören, Ihre Ideen kennenzulernen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
+    "needFrontEndDev":"Brauchen Sie einen Frontend-Entwickler?",
+    "contactMe": "Kontaktieren Sie mich!",
+    "Your Name":"Ihr Name",
+    "nameRequiredError": "Ihr Name ist erforderlich",
+    "nameInvalidError": "Ihr Name muss mindestens 3 Buchstaben lang sein",
+    "emailRequiredError": "Ihre E-mail ist erforderlich",
+    "emailInvalidError": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+    "emptyErrorMessage" : "Ihre Nachricht ist leer",
+    "minLenErrorMessage": "Ihre Nachricht muss mindestens 10 Buchstaben lang sein"
 }

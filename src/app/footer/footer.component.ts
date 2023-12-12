@@ -1,3 +1,4 @@
+import { ViewportScroller } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent {
+  link(callLink: any) {
+    window.open(callLink);
+  };
 
+  constructor(private scroller: ViewportScroller) { }
+
+  scrollToTarget(target: string) {
+    this.scroller.scrollToAnchor(target);
+  }
 }

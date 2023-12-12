@@ -118,10 +118,12 @@
 .contactLinks {
     display: flex;
     gap: 42px;
+   
 
     img {
         width: 30px;
         height: 30px;
+        cursor: pointer;
 
         &:hover {
             scale: 1.2;

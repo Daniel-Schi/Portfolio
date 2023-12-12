@@ -10,6 +10,17 @@
     "aboutMePartOne": "With my new experience, I created various websites and business applications as well as a jump and run game using object-oriented programming.",
     "aboutMePartTwo": "Due to my everyday professional life as a physiotherapist, communication is very important in order to differentiate problems.There are also team discussions to find common solutions. These skills will help me in IT to achieve the best possible result as a team.",
     "Join": "A task manager inspired by the KAnban system. Create and organize tasks using drag and drop functions, assing users and categories.",
-    "sampleWork": "This page is a sample work - please feel free to try them out."
+    "sampleWork": "This page is a sample work - please feel free to try them out.",
+    "contactSecendHeadline": "Got a problem to solve?",
+    "contactContent": "Contact me through this from, I am interested in hearing you, knowing your ideas and contributing to your probjects with my work.",
+    "needFrontEndDev":"Need a Frontend developer?",
+    "contactMe": "Contact me",
+    "Your Name": "Your Name",
+    "nameRequiredError": "Your name is required",
+    "nameInvalidError":"The minimum length of 3 letters has not been reached",
+    "emailRequiredError": "Your E-mail is required",
+    "emailInvalidError": "Please enter a valid email address",
+    "minLenErrorMessage": "The minimum length of 10 letters has not been reached",
+    "emptyErrorMessage": "Your message is empty"
 }
 

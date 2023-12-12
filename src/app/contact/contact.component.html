@@ -5,12 +5,11 @@
     </div>
     <div class="contactContentContainer">
         <div class="contactContent" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-            <h3>Got a problem to solve?</h3>
-            <span>Contact me through this from, I am interested in hearing you, knowing your ideas and contributing to
-                your probjects with my work.</span>
-            <span>Need a Frontend developer?
-                <span class="contactMe"> Contact me!</span>
-            </span>
+            <h3>{{ 'contactSecendHeadline' | translate }}</h3>
+            <span>{{ 'contactContent' | translate }}</span>
+            <div> <span>{{ 'needFrontEndDev' | translate }}</span>
+                <span class="contactMe"> {{'contactMe' | translate }}</span>
+            </div>
         </div>
         <div>
             <form (submit)="sendMail()" [formGroup]="contactForm">
@@ -23,10 +22,10 @@
                         <div class="requiredInfo"
                             *ngIf="contactForm.controls['nameInput'].invalid && (contactForm.controls['nameInput'].dirty || contactForm.controls['nameInput'].touched)">
                             <span *ngIf="contactForm.controls['nameInput'].errors?.['required']">
-                                Your name is required
+                                {{ 'nameRequiredError' | translate }}
                             </span>
                             <span *ngIf="contactForm.controls['nameInput'].errors?.['minlength']">
-                                The minimum length of 3 letters has not been reached
+                                {{ 'nameInvalidError' | translate }}
                             </span>
                         </div>
                         <div class="errorImage"
@@ -45,10 +44,10 @@
                         <div class="requiredInfo"
                             *ngIf="(contactForm.controls['emailInput'].touched || contactForm.controls['emailInput'].dirty) && contactForm.controls['emailInput'].invalid">
                             <span *ngIf="contactForm.controls['emailInput'].errors?.['required']">
-                                Your email is required
+                                {{ 'emailRequiredError' | translate }}
                             </span>
                             <span *ngIf="contactForm.controls['emailInput'].hasError('pattern')">
-                                Please enter a valid email address
+                               {{ 'emailInvalidError' | translate }}
                             </span>
                         </div>
                         <div class="errorImage"
@@ -68,10 +67,10 @@
                         <div class="requiredInfo"
                             *ngIf="(contactForm.controls['messageInput'].touched || contactForm.controls['messageInput'].dirty) && contactForm.controls['messageInput'].invalid">
                             <span *ngIf="contactForm.controls['messageInput'].errors?.['required']">
-                                Your message is empty
+                                {{ 'emptyErrorMessage' | translate }}
                             </span>
                             <span *ngIf="contactForm.controls['messageInput'].errors?.['minlength']">
-                                The minimum length of 10 letters has not been reached
+                                {{ 'minLenErrorMessage' | translate }}
                             </span>
                         </div>
                         <div class="errorImage"
@@ -103,7 +102,7 @@
         </div>
         <div class="backgroundImg"><img src="/assets/img/background/purple-shadow-footer.png"></div>
     </div>
-   
+
     <div class="goUpBtn">
         <a routerLink="/"><img src="/assets/img/icons/goUpBtn.png" alt="ArrowUp Icon"></a>
     </div>
