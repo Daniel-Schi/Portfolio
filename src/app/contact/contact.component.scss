@@ -9,6 +9,9 @@
         margin-top: 270px;
         width: auto;
     }
+    @media(max-width: 400px) {
+        margin-top: 140px;
+    }
 }
 
 .contactHeadline {
