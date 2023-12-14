@@ -19,7 +19,7 @@ export class PortfolioComponent implements OnInit {
         "de": "Ein Aufgaben-Manager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu."
       },
       "image": "laptop-join.jpg",
-      "url": "#",
+      "url": "https://join.daniel-schirmer.de/",
       "github": "https://github.com/Daniel-Schi/Join",
     },
     {
@@ -30,7 +30,7 @@ export class PortfolioComponent implements OnInit {
         "de": "Ein Sprung-, Lauf- und Wurfspiel, das auf einem objektorientierten Ansatz basiert. Hilf ritter dabei, Schwerter und Zaubertranks zu finden, um gegen den großen Golem zu kämpfen."
       },
       "image": "game-pc.png",
-      "url": "#",
+      "url": "https://knights-vs-golem.daniel-schirmer.de/",
       "github": "https://github.com/Daniel-Schi/Knights-vs-Golem",
     },
     {
@@ -41,7 +41,7 @@ export class PortfolioComponent implements OnInit {
         "de": "Basierend auf der PokeAPI, einer einfachen Bibliothek, die Pokemon-Informationen bereitstellt und katalogisiert."
       },
       "image": "pokedex-pc.png",
-      "url": "#",
+      "url": "https://pokemon.daniel-schirmer.de/",
       "github": "https://github.com/Daniel-Schi/Pokemon",
     }
   ];

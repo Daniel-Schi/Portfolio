@@ -33,4 +33,8 @@ export class HeaderComponent {
       hamIcon.classList.remove('active');
     }
   }
+
+  toTop() {
+    window.scrollTo(0, 0);
+  }
 }

@@ -1,4 +1,4 @@
-<div class="portfolioContainer">
+<div class="portfolioContainer" id="portfolio">
     <div class="headlineBox">
         <div class="portfolioHeadline">
             <div class="headlineLineLeft"></div>
@@ -21,7 +21,7 @@
                     <span class="projectLanguages">{{ project.language }}</span>
                     <span class="projectDescription">{{ getProjectDescription(project) }}</span>
                     <div class="btnContainer" [ngStyle]="{'justify-content': i % 2 !== 0 ? 'flex-end' : 'flex-start'}">
-                        <a class="live" target="_blank" href="#">Live test</a>
+                        <a class="live" target="_blank" href="{{ project.url }}">Live test</a>
                         <a class="github" target="_blank" href="{{ project.github }}">Github</a>
                     </div>
                 </div>

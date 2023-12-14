@@ -18,9 +18,14 @@
     "Your Name": "Your Name",
     "nameRequiredError": "Your name is required",
     "nameInvalidError":"The minimum length of 3 letters has not been reached",
+    "Your E-Mail": "Your E-Mail",
     "emailRequiredError": "Your E-mail is required",
     "emailInvalidError": "Please enter a valid email address",
+    "Your Message": "Your Message",
     "minLenErrorMessage": "The minimum length of 10 letters has not been reached",
-    "emptyErrorMessage": "Your message is empty"
+    "emptyErrorMessage": "Your message is empty",
+    "firstSpan": "I've read the",
+    "privacyPolicy": "privacy policy",
+    "secondSpan": "and agree to the processing of my data as outlined."
 }
 

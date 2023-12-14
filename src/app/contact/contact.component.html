@@ -1,4 +1,4 @@
-<div class="contactContainer">
+<div class="contactContainer" id="contact">
     <div class="contactHeadline">
         <div class="contactLineLeft"></div>
         <h1 class="headline">{{ 'Contact' | translate }}</h1>
@@ -90,9 +90,9 @@
                                 <span class="checkmark"></span>
                             </label>
                             <div>
-                                <span>I've read the</span>
-                                <a routerLink="/imprint">privacy policy</a>
-                                <span>and agree to the processing of my data as outlined.</span>
+                                <span>{{ 'firstSpan' | translate }}</span>
+                                <a routerLink="/imprint">{{ 'privacyPolicy' | translate }}</a>
+                                <span>{{ 'secondSpan' |translate }}</span>
                             </div>
                         </div>
                         <button [disabled]="!contactForm.valid">Send message :)</button>
@@ -103,7 +103,7 @@
         <div class="backgroundImg"><img src="/assets/img/background/purple-shadow-footer.png"></div>
     </div>
 
-    <div class="goUpBtn">
-        <a routerLink="/"><img src="/assets/img/icons/goUpBtn.png" alt="ArrowUp Icon"></a>
+    <div class="goUpBtn" (click)="toTop()">
+        <img src="/assets/img/icons/goUpBtn.png" alt="ArrowUp Icon">
     </div>
 </div>

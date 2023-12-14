@@ -25,8 +25,12 @@ export class ContactComponent {
 
   }
 
-  setBorderColor() {
+  // setBorderColor() {
 
+  // }
+
+  toTop() {
+    window.scrollTo(0, 0);
   }
  
 }

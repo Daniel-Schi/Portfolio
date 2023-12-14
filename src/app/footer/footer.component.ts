@@ -16,4 +16,8 @@ export class FooterComponent {
   scrollToTarget(target: string) {
     this.scroller.scrollToAnchor(target);
   }
+
+  toTop() {
+    window.scrollTo(0, 0);
+  }
 }
