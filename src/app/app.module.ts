@@ -15,6 +15,7 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { HttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { ContactComponent } from './contact/contact.component';
+import { ImprintComponent } from './imprint/imprint.component';
 // import { NgxTranslateCutModule } from 'ngx-translate-cut';
 
 
@@ -33,6 +34,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     PortfolioComponent,
     ComponentsfolderComponent,
     ContactComponent,
+    ImprintComponent,
   ],
   imports: [
     BrowserModule,

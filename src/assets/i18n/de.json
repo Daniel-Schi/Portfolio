@@ -18,13 +18,15 @@
     "Your Name":"Ihr Name",
     "nameRequiredError": "Ihr Name ist erforderlich",
     "nameInvalidError": "Ihr Name muss mindestens 3 Buchstaben lang sein",
-    "Your E-Mail": "Deine E-Mail",
+    "Your E-Mail": "Ihre E-Mail",
     "emailRequiredError": "Ihre E-mail ist erforderlich",
     "emailInvalidError": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
-    "Your Message": "Deine Nachricht",
+    "Your Message": "Ihre Nachricht",
     "emptyErrorMessage" : "Ihre Nachricht ist leer",
     "minLenErrorMessage": "Ihre Nachricht muss mindestens 10 Buchstaben lang sein",
     "firstSpan": "Ich habe die",
     "privacyPolicy": "Datenschutzerklärung ",
-    "secondSpan": "gelesen und bin mit der beschriebenen Verarbeitung meiner Daten einverstanden."
+    "secondSpan": "gelesen und bin mit der beschriebenen Verarbeitung meiner Daten einverstanden.",
+    "Send message": "Nachricht senden :)",
+    "Imprint": "Impressum"
 }

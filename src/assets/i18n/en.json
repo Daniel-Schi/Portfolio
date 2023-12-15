@@ -14,7 +14,7 @@
     "contactSecendHeadline": "Got a problem to solve?",
     "contactContent": "Contact me through this from, I am interested in hearing you, knowing your ideas and contributing to your probjects with my work.",
     "needFrontEndDev":"Need a Frontend developer?",
-    "contactMe": "Contact me",
+    "contactMe": "Contact me!",
     "Your Name": "Your Name",
     "nameRequiredError": "Your name is required",
     "nameInvalidError":"The minimum length of 3 letters has not been reached",
@@ -26,6 +26,8 @@
     "emptyErrorMessage": "Your message is empty",
     "firstSpan": "I've read the",
     "privacyPolicy": "privacy policy",
-    "secondSpan": "and agree to the processing of my data as outlined."
+    "secondSpan": "and agree to the processing of my data as outlined.",
+    "Send message": "Send message :)",
+    "Imprint": "Imprint"
 }
 

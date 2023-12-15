@@ -1,0 +1,20 @@
+.imprintContainer {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    padding-top: 120px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 120px;
+}
+
+.imprintContent {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+
+    h1{
+        font-size: 60px;
+    }
+}

@@ -10,6 +10,7 @@
         margin-top: 270px;
         width: auto;
     }
+
     @media(max-width: 400px) {
         margin-top: 140px;
     }
@@ -77,6 +78,11 @@
         flex-direction: column;
         color: white;
         width: 100%;
+        margin-right: 150px;
+
+        @media(max-width: 1400px) {
+            margin-right: 0px;
+        }
 
         h3 {
             font-size: 38px;

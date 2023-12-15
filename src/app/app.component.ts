@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import * as AOS from 'aos';
 
@@ -8,15 +9,18 @@ import * as AOS from 'aos';
   styleUrls: ['./app.component.scss']
 })
 
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   title = 'portfolio';
 
-  
-  constructor(public translate: TranslateService) {
+
+  constructor(public router: Router, translate: TranslateService) {
 
   }
 
-  ngOnInit(){
+  ngOnInit() {
     AOS.init({});
   }
 }
+
+
+
