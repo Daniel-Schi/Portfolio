@@ -2,19 +2,26 @@
     display: flex;
     width: 100vw;
     justify-content: center;
-    padding-top: 120px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 120px;
+    align-items: center;
+
+   
 }
 
 .imprintContent {
     display: flex;
-    justify-content: center;
     flex-direction: column;
     color: white;
+    padding-top: 120px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 60px;
+    font-size: 20px;
 
-    h1{
-        font-size: 60px;
+    h1 {
+        font-size: 48px;
+    }
+
+    @media(max-width: 557px) {
+        font-size: 18px;
     }
 }
