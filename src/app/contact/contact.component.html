@@ -95,7 +95,7 @@
                                 <span>{{ 'secondSpan' |translate }}</span>
                             </div>
                         </div>
-                        <button [disabled]="send">{{ 'Send message' | translate }}</button>
+                        <button [ngClass]="{'sendButton': contactForm.valid, 'disabled': !contactForm.valid}" [disabled]="send">{{ 'Send message' | translate }}</button>
                     </div>
                 </div>
             </form>

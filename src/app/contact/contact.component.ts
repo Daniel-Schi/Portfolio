@@ -23,27 +23,32 @@ export class ContactComponent {
 
   async sendMail() {
     if (this.contactForm.valid) {
-
-      const name = this.contactForm.get('nameInput')?.value;
-      const email = this.contactForm.get('emailInput')?.value;
-      const message = this.contactForm.get('messageInput')?.value;
-
-
-      let formData = new FormData();
-      formData.append('name', name as string);
-      formData.append('email', email as string);
-      formData.append('message', message as any);
-
-      try {
-        await fetch('https://www.daniel-schirmer.de/email/send_mail.php', {
-          method: 'POST',
-          body: formData,
-          mode: 'no-cors'
-        });
-      } catch (error) { }
-
+      const name = this.contactForm.get('nameInput')?.value as string;
+      const email = this.contactForm.get('emailInput')?.value as string;
+      const message = this.contactForm.get('messageInput')?.value as string;
+  
+      await this.sendFormData(name, email, message);
+  
       this.contactForm.reset();
       this.send = true;
+    }
+  }
+  
+
+  async sendFormData(name: string, email: string, message: string) {
+    let formData = new FormData();
+    formData.append('name', name);
+    formData.append('email', email);
+    formData.append('message', message);
+  
+    try {
+      await fetch('https://www.daniel-schirmer.de/email/send_mail.php', {
+        method: 'POST',
+        body: formData,
+        mode: 'no-cors'
+      });
+    } catch (error) {
+      // Hier könntest du Fehlerbehandlung hinzufügen, wenn erforderlich
     }
   }
 
