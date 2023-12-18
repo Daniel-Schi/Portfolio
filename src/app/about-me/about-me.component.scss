@@ -1,8 +1,7 @@
 .aboutMeContainer {
     display: flex;
     position: relative;
-    // height: 900px;
-
+    
     @media (max-width: 1030px) {
         padding-top: 100px;
     }
@@ -10,7 +9,6 @@
     @media (max-width: 700px) {
         padding-top: 0;
     }
-
 
     .aboutMeDescription {
         display: flex;
@@ -166,6 +164,4 @@
             }
         }
     }
-
-
 }
