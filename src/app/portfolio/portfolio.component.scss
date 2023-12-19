@@ -71,6 +71,9 @@
         @media(max-width: 450px) {
             width: 75px;
         }
+        @media(max-width: 400px) {
+            width: 45px;
+        }
     }
 
     @media(max-width: 450px) {
@@ -113,6 +116,9 @@
 
     @media(max-width: 450px) {
         left: 75px;
+    }
+    @media(max-width: 400px) {
+        width: 275px;
     }
 }
 
@@ -238,6 +244,9 @@
             width: 320px;
             justify-content: center;
         }
+        @media(max-width: 400px) {
+            width: 270px;
+        }
 
         .projectName {
             color: #9747FF;
@@ -247,6 +256,7 @@
             @media(max-width: 900px) {
                 display: flex;
                 justify-content: center !important;
+                text-align: center;
             }
         }
 

@@ -118,24 +118,25 @@
         right: 0;
         width: 100%;
     }
-    // @media (max-width: 700px) {
-    //     right: 180px;
-    //     top: 605px;
-    // }
+    @media (max-width: 700px) {
+        top: 605px;
+    }
 
-    // @media (max-width: 525px) {
-    //     right: 100px;
-    // }
-
-    // @media (max-width: 450px) {
-    //     right: 0px;
-    //     left: 0;
-    // }
+    @media (max-width: 400px) {
+        width: auto;
+        padding-left: 0px;
+        right: 25px;
+        left: 25px;
+    }
 }
 
 .nameContainer {
     display: flex;
     gap: 15px;  
+
+    @media(max-width: 400px){
+        padding-right: 50px;
+    }
 
     .verticalSpan {
         color: white;
@@ -162,6 +163,10 @@
             font-size: 26px;
             left: 55px;
             top: -7px;
+        }
+        @media (max-width: 400px) {
+            font-size: 23px;
+            top: -10px;
         }
     }
 
@@ -221,6 +226,15 @@
 
         .job {
             font-size: 25px;
+        }
+    }
+    @media (max-width: 400px) {
+        .name {
+            font-size: 28px;
+        }
+
+        .job {
+            font-size: 23px;
         }
     }
 }
@@ -291,7 +305,7 @@
     }
 
     @media (max-width: 700px) {
-        top: 900px;
+        top: 850px;
         width: 100vw;
         left: -140px;
         display: flex;
