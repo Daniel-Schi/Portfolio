@@ -197,9 +197,11 @@
             color: white;
             border-radius: 10px;
             cursor: pointer;
+            
 
             &::placeholder {
                 color: white;
+                font-family: 'Poppins', sans-serif;
             }
 
             &:focus {
@@ -227,7 +229,7 @@
 
             &::placeholder {
                 color: white;
-                font-size: 19px;
+                font-size: 16px;
             }
 
             &:focus {

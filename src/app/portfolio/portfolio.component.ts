@@ -15,7 +15,7 @@ export class PortfolioComponent implements OnInit {
       "name": "Join",
       "language": "JavaScript | HTML | CSS",
       "translations": {
-        "en": "A task manager inspired by the KAnban system. Create and organize tasks using drag and drop functions, assing users and categories.",
+        "en": "A task manager inspired by the Kanban system. Create and organize tasks using drag and drop functions, assing users and categories.",
         "de": "Ein Aufgaben-Manager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu."
       },
       "image": "laptop-join.jpg",
