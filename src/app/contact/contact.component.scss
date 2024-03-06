@@ -1,7 +1,13 @@
+.contactSection{
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .contactContainer {
     width: 100vw;
     height: 750px;
     padding-top: 200px;
+    max-width: 1440px;
 
     @media(max-width: 900px) {
         padding-top: 0;
@@ -29,8 +35,10 @@
     }
 
     .contactLineLeft {
-        width: 50px;
-        left: 0;
+        display: flex;
+        position: relative;
+        width: 455px;
+        left: -375px;
         border: 2px solid #9747FF;
     }
 
@@ -80,7 +88,6 @@
     }
     @media(max-width: 450px) {
         margin-left: 25px;
-        margin-right: 25px;
     }
 
     .contactContent {
@@ -100,6 +107,12 @@
 
         @media(max-width: 900px) {
             width: 100%;
+        }
+        @media(max-width: 450px) {
+            width: 80%;
+        }
+        @media(max-width: 400px) {
+            width: 70%;
         }
 
         h3 {
@@ -165,14 +178,16 @@
     @media(max-width: 900px) {
         width: auto;
     }
+    @media(max-width: 450px) {
+        width: 300px;
+    }
+    @media(max-width: 400px) {
+        width: 270px;
+    }
 
     .contactForm {
         width: 100%;
         position: relative;
-
-        @media(max-width: 450px) {
-            width: auto;
-        }
 
         input {
             width: 92%;

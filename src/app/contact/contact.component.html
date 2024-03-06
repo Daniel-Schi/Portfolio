@@ -1,109 +1,111 @@
-<div class="contactContainer" id="contact">
-    <div class="contactHeadline">
-        <div class="contactLineLeft"></div>
-        <h1 class="headline">{{ 'Contact' | translate }}</h1>
-    </div>
-    <div class="contactContentContainer">
-        <div class="contactContent" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-            <h3>{{ 'contactSecendHeadline' | translate }}</h3>
-            <span>{{ 'contactContent' | translate }}</span>
-            <div> <span>{{ 'needFrontEndDev' | translate }}</span>
-                <span class="contactMe"> {{'contactMe' | translate }}</span>
-            </div>
+<section class="contactSection">
+    <div class="contactContainer" id="contact">
+        <div class="contactHeadline">
+            <div class="contactLineLeft"></div>
+            <h1 class="headline">{{ 'Contact' | translate }}</h1>
         </div>
-        <div>
-            <form (submit)="sendMail()" [formGroup]="contactForm">
-                <div class="formContainer">
-                    <!-- Name-field -->
-                    <div class="contactForm">
-                        <input formControlName="nameInput" [ngClass]="{ 'red-border': contactForm.controls['nameInput'].invalid && (contactForm.controls['nameInput'].dirty || contactForm.controls['nameInput'].touched),
-                    'green-border': contactForm.controls['nameInput'].valid }" required minlength="3"
-                            placeholder="{{ 'Your Name' | translate }}" type="text" name="name">
-                        <div class="requiredInfo"
-                            *ngIf="contactForm.controls['nameInput'].invalid && (contactForm.controls['nameInput'].dirty || contactForm.controls['nameInput'].touched)">
-                            <span *ngIf="contactForm.controls['nameInput'].errors?.['required']">
-                                {{ 'nameRequiredError' | translate }}
-                            </span>
-                            <span *ngIf="contactForm.controls['nameInput'].errors?.['minlength']">
-                                {{ 'nameInvalidError' | translate }}
-                            </span>
-                        </div>
-                        <div class="errorImage"
-                            *ngIf="contactForm.controls['nameInput'].invalid && (contactForm.controls['nameInput'].dirty || contactForm.controls['nameInput'].touched)">
-                            <img src="/assets/img/icons/error.png" alt="Error Icon">
-                        </div>
-                        <div class="confirmImage" *ngIf="contactForm.controls['nameInput'].valid">
-                            <img src="/assets/img/icons/confirm.png" alt="Error Icon">
-                        </div>
-                    </div>
-                    <!-- E-Mail-field -->
-                    <div class="contactForm">
-                        <input formControlName="emailInput" [ngClass]="{ 'red-border': contactForm.controls['emailInput'].invalid && (contactForm.controls['emailInput'].touched || contactForm.controls['emailInput'].dirty),
-                    'green-border': contactForm.controls['emailInput'].valid }" required
-                            placeholder="{{ 'Your E-Mail' | translate }}" type="email" name="email">
-                        <div class="requiredInfo"
-                            *ngIf="(contactForm.controls['emailInput'].touched || contactForm.controls['emailInput'].dirty) && contactForm.controls['emailInput'].invalid">
-                            <span *ngIf="contactForm.controls['emailInput'].errors?.['required']">
-                                {{ 'emailRequiredError' | translate }}
-                            </span>
-                            <span *ngIf="contactForm.controls['emailInput'].hasError('pattern')">
-                               {{ 'emailInvalidError' | translate }}
-                            </span>
-                        </div>
-                        <div class="errorImage"
-                            *ngIf="(contactForm.controls['emailInput'].touched || contactForm.controls['emailInput'].dirty) && contactForm.controls['emailInput'].invalid">
-                            <img src="/assets/img/icons/error.png" alt="Error Icon">
-                        </div>
-                        <div class="confirmImage"
-                            *ngIf="contactForm.controls['emailInput'].valid && (contactForm.controls['emailInput'].touched || contactForm.controls['emailInput'].dirty)">
-                            <img src="/assets/img/icons/confirm.png" alt="Confirm Icon">
-                        </div>
-                    </div>
-                    <!-- Textarea-field -->
-                    <div class="contactForm">
-                        <textarea formControlName="messageInput" [ngClass]="{ 'red-border': contactForm.controls['messageInput'].invalid && (contactForm.controls['messageInput'].touched || contactForm.controls['messageInput'].dirty),
-                    'green-border': contactForm.controls['messageInput'].valid }" minlength="10" required
-                            placeholder="{{ 'Your Message' | translate }}" name="message"></textarea>
-                        <div class="requiredInfo"
-                            *ngIf="(contactForm.controls['messageInput'].touched || contactForm.controls['messageInput'].dirty) && contactForm.controls['messageInput'].invalid">
-                            <span *ngIf="contactForm.controls['messageInput'].errors?.['required']">
-                                {{ 'emptyErrorMessage' | translate }}
-                            </span>
-                            <span *ngIf="contactForm.controls['messageInput'].errors?.['minlength']">
-                                {{ 'minLenErrorMessage' | translate }}
-                            </span>
-                        </div>
-                        <div class="errorImage"
-                            *ngIf="(contactForm.controls['messageInput'].touched || contactForm.controls['messageInput'].dirty) && contactForm.controls['messageInput'].invalid">
-                            <img src="/assets/img/icons/error.png" alt="Error Icon">
-                        </div>
-                        <div class="confirmImage"
-                            *ngIf="contactForm.controls['messageInput'].valid && (contactForm.controls['messageInput'].touched || contactForm.controls['messageInput'].dirty)">
-                            <img src="/assets/img/icons/confirm.png" alt="Confirm Icon">
-                        </div>
-                    </div>
-                    <div class="sendMessage">
-                        <div class="checkbox">
-                            <label class="checkboxLabel" for="imprint">
-                                <input formControlName="checkboxInput" type="checkbox" name="checkbox" required
-                                    id="imprint">
-                                <span class="checkmark"></span>
-                            </label>
-                            <div>
-                                <span>{{ 'firstSpan' | translate }}</span>
-                                <a routerLink="/imprint">{{ 'privacyPolicy' | translate }}</a>
-                                <span>{{ 'secondSpan' |translate }}</span>
+        <div class="contactContentContainer">
+            <div class="contactContent" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                <h3>{{ 'contactSecendHeadline' | translate }}</h3>
+                <span>{{ 'contactContent' | translate }}</span>
+                <div> <span>{{ 'needFrontEndDev' | translate }}</span>
+                    <span class="contactMe"> {{'contactMe' | translate }}</span>
+                </div>
+            </div>
+            <div>
+                <form (submit)="sendMail()" [formGroup]="contactForm">
+                    <div class="formContainer">
+                        <!-- Name-field -->
+                        <div class="contactForm">
+                            <input formControlName="nameInput" [ngClass]="{ 'red-border': contactForm.controls['nameInput'].invalid && (contactForm.controls['nameInput'].dirty || contactForm.controls['nameInput'].touched),
+                        'green-border': contactForm.controls['nameInput'].valid }" required minlength="3"
+                                placeholder="{{ 'Your Name' | translate }}" type="text" name="name">
+                            <div class="requiredInfo"
+                                *ngIf="contactForm.controls['nameInput'].invalid && (contactForm.controls['nameInput'].dirty || contactForm.controls['nameInput'].touched)">
+                                <span *ngIf="contactForm.controls['nameInput'].errors?.['required']">
+                                    {{ 'nameRequiredError' | translate }}
+                                </span>
+                                <span *ngIf="contactForm.controls['nameInput'].errors?.['minlength']">
+                                    {{ 'nameInvalidError' | translate }}
+                                </span>
+                            </div>
+                            <div class="errorImage"
+                                *ngIf="contactForm.controls['nameInput'].invalid && (contactForm.controls['nameInput'].dirty || contactForm.controls['nameInput'].touched)">
+                                <img src="/assets/img/icons/error.png" alt="Error Icon">
+                            </div>
+                            <div class="confirmImage" *ngIf="contactForm.controls['nameInput'].valid">
+                                <img src="/assets/img/icons/confirm.png" alt="Error Icon">
                             </div>
                         </div>
-                        <button [ngClass]="{'sendButton': contactForm.valid, 'disabled': !contactForm.valid}" [disabled]="send">{{ 'Send message' | translate }}</button>
+                        <!-- E-Mail-field -->
+                        <div class="contactForm">
+                            <input formControlName="emailInput" [ngClass]="{ 'red-border': contactForm.controls['emailInput'].invalid && (contactForm.controls['emailInput'].touched || contactForm.controls['emailInput'].dirty),
+                        'green-border': contactForm.controls['emailInput'].valid }" required
+                                placeholder="{{ 'Your E-Mail' | translate }}" type="email" name="email">
+                            <div class="requiredInfo"
+                                *ngIf="(contactForm.controls['emailInput'].touched || contactForm.controls['emailInput'].dirty) && contactForm.controls['emailInput'].invalid">
+                                <span *ngIf="contactForm.controls['emailInput'].errors?.['required']">
+                                    {{ 'emailRequiredError' | translate }}
+                                </span>
+                                <span *ngIf="contactForm.controls['emailInput'].hasError('pattern')">
+                                   {{ 'emailInvalidError' | translate }}
+                                </span>
+                            </div>
+                            <div class="errorImage"
+                                *ngIf="(contactForm.controls['emailInput'].touched || contactForm.controls['emailInput'].dirty) && contactForm.controls['emailInput'].invalid">
+                                <img src="/assets/img/icons/error.png" alt="Error Icon">
+                            </div>
+                            <div class="confirmImage"
+                                *ngIf="contactForm.controls['emailInput'].valid && (contactForm.controls['emailInput'].touched || contactForm.controls['emailInput'].dirty)">
+                                <img src="/assets/img/icons/confirm.png" alt="Confirm Icon">
+                            </div>
+                        </div>
+                        <!-- Textarea-field -->
+                        <div class="contactForm">
+                            <textarea formControlName="messageInput" [ngClass]="{ 'red-border': contactForm.controls['messageInput'].invalid && (contactForm.controls['messageInput'].touched || contactForm.controls['messageInput'].dirty),
+                        'green-border': contactForm.controls['messageInput'].valid }" minlength="10" required
+                                placeholder="{{ 'Your Message' | translate }}" name="message"></textarea>
+                            <div class="requiredInfo"
+                                *ngIf="(contactForm.controls['messageInput'].touched || contactForm.controls['messageInput'].dirty) && contactForm.controls['messageInput'].invalid">
+                                <span *ngIf="contactForm.controls['messageInput'].errors?.['required']">
+                                    {{ 'emptyErrorMessage' | translate }}
+                                </span>
+                                <span *ngIf="contactForm.controls['messageInput'].errors?.['minlength']">
+                                    {{ 'minLenErrorMessage' | translate }}
+                                </span>
+                            </div>
+                            <div class="errorImage"
+                                *ngIf="(contactForm.controls['messageInput'].touched || contactForm.controls['messageInput'].dirty) && contactForm.controls['messageInput'].invalid">
+                                <img src="/assets/img/icons/error.png" alt="Error Icon">
+                            </div>
+                            <div class="confirmImage"
+                                *ngIf="contactForm.controls['messageInput'].valid && (contactForm.controls['messageInput'].touched || contactForm.controls['messageInput'].dirty)">
+                                <img src="/assets/img/icons/confirm.png" alt="Confirm Icon">
+                            </div>
+                        </div>
+                        <div class="sendMessage">
+                            <div class="checkbox">
+                                <label class="checkboxLabel" for="imprint">
+                                    <input formControlName="checkboxInput" type="checkbox" name="checkbox" required
+                                        id="imprint">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <div>
+                                    <span>{{ 'firstSpan' | translate }}</span>
+                                    <a routerLink="/imprint">{{ 'privacyPolicy' | translate }}</a>
+                                    <span>{{ 'secondSpan' |translate }}</span>
+                                </div>
+                            </div>
+                            <button [ngClass]="{'sendButton': contactForm.valid, 'disabled': !contactForm.valid}" [disabled]="send">{{ 'Send message' | translate }}</button>
+                        </div>
                     </div>
-                </div>
-            </form>
+                </form>
+            </div>
+            <div class="backgroundImg"><img src="/assets/img/background/purple-shadow-footer.png"></div>
         </div>
-        <div class="backgroundImg"><img src="/assets/img/background/purple-shadow-footer.png"></div>
+    
+        <div class="goUpBtn" (click)="toTop()">
+            <img src="/assets/img/icons/goUpBtn.png" alt="ArrowUp Icon">
+        </div>
     </div>
-
-    <div class="goUpBtn" (click)="toTop()">
-        <img src="/assets/img/icons/goUpBtn.png" alt="ArrowUp Icon">
-    </div>
-</div>
+</section>

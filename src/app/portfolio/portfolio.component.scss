@@ -1,3 +1,8 @@
+.portfolioSection{
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .portfolioContainer {
     position: relative;
     width: 100vw;
@@ -141,7 +146,7 @@
 .backgroundElementRight {
     position: absolute;
     bottom: 0px;
-    overflow: hidden;
+    // overflow: hidden;
     display: flex;
     right: 0;
     height: 951px;
